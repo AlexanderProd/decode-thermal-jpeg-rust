@@ -25,4 +25,8 @@ cargo run
 
 The Rust script uses the `zune-jpeg` crate to attempt to decode the binary file.
 
-While guessing the image format using the `guess_format` function from the `image` crate works, the `decode` function from the `zune-jpeg` crate fails to decode the binary file.
+While guessing the image format using the `guess_format` function from the `image` crate works, the `decode` function from the `zune-jpeg` crate fails to decode the binary file and returns:
+
+```
+Error decoding SOF Marker, Number of components cannot be zero.
+```
